@@ -33,8 +33,7 @@ jobs:
 
     - name: Create Executable
       run: |
-        pyinstaller --onefile --windowed --icon bullish.ico --add-data "light-off.png;." --add-data "light-on.png;." stock_split_calculator.py
-      shell: bash
+        pyinstaller --onefile --windowed --icon bullish.ico --add-data "bullish.ico;." --add-data "light-off.png;." --add-data "light-on.png;." stock_calculator.py      shell: bash
 
     - name: Upload Executable
       uses: actions/upload-artifact@v2
